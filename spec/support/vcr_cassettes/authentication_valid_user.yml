@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://sai:password@localhost:4000/authentication
+    body:
+      encoding: UTF-8
+      string: '{"email":"priyanka.sahas@live.com","password":"Pri12345"}'
+    headers:
+      User-Agent:
+      - Sai HTML Client
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ce710ad762b3ce700213bd52ebcc991f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dc4e9c87-bbaf-4256-bf48-cd0fbb5b5e96
+      X-Runtime:
+      - '0.115024'
+      Vary:
+      - Origin
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.2.1/2015-02-26)
+      Date:
+      - Sun, 28 Feb 2016 07:56:09 GMT
+      Content-Length:
+      - '95'
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: UTF-8
+      string: '{"user":{"id":1,"email":"priyanka.sahas@live.com","first_name":"Priyanka","last_name":"Sahas"}}'
+    http_version: 
+  recorded_at: Sun, 28 Feb 2016 07:56:09 GMT
+recorded_with: VCR 2.9.3
